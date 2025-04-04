@@ -1,0 +1,20 @@
+module gray_code_counter_tb();
+reg clk;
+reg rst;
+wire [2:0] gray;
+gray_code_counter dut(.clk(clk),.rst(rst),.gray(gray));
+initial begin
+clk=0
+forever #5 clk=~clk;
+end
+initial begin
+rst=1;#10;
+rst=0;#200;
+rst=1;#10;
+rst=0;#100;
+$finish;
+end
+initial begin
+$monitor("time:%t rst=%b gray code=%b", $time,rst,gray);
+end
+endmodule
