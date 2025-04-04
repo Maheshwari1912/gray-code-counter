@@ -12,3 +12,5 @@ A Gray Code Counter serves specific purposes in digital systems where minimizing
 ensuring reliable data transitions are critical. 
 
 Understanding its aim involves exploring the unique properties of Gray code and the scenarios where these properties offer significant advantages over traditional binary counting. 
+
+![Uploading image.png…]()
